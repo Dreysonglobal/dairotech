@@ -1,0 +1,73 @@
+<!-- Enhanced SEO Meta Tags -->
+<meta name="description" content="Dairo Tech - Global software solutions & engineering services company. Software development, AI consulting, cloud solutions, cybersecurity, and data analytics services.">
+<meta name="keywords" content="software development, IT services, AI consulting, cloud solutions, cybersecurity, data analytics, software engineering, technology consulting, digital transformation">
+<meta name="author" content="Dairo Tech">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://dairotech.com/">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dairo Tech - Global Software Solutions & Engineering Services">
+<meta property="og:description" content="Empowering vision. Delivering value. Global software solutions and engineering services for digital transformation.">
+<meta property="og:image" content="https://dairotech.com/images/og-image.jpg">
+<meta property="og:url" content="https://dairotech.com/">
+<meta property="og:site_name" content="Dairo Tech">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dairo Tech - Global Software Solutions & Engineering Services">
+<meta name="twitter:description" content="Empowering vision. Delivering value. Global software solutions and engineering services for digital transformation.">
+<meta name="twitter:image" content="https://dairotech.com/images/twitter-image.jpg">
+
+<!-- Structured Data / JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Dairo Tech",
+  "alternateName": "Dairo Technology Solutions",
+  "url": "https://dairotech.com/",
+  "logo": "https://dairotech.com/images/logo.png",
+  "description": "Global software solutions and engineering services company providing software development, AI consulting, cloud solutions, cybersecurity, and data analytics services.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4330 W Broward Boulevard – Space P/Q",
+    "addressLocality": "Plantation",
+    "addressRegion": "FL",
+    "postalCode": "33317",
+    "addressCountry": "US"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-727-341-5669",
+    "contactType": "customer service",
+    "areaServed": "US",
+    "availableLanguage": "en"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/dairo-tech",
+    "https://twitter.com/dairotech",
+    "https://www.facebook.com/dairotech"
+  ],
+  "foundingDate": "2002",
+  "numberOfEmployees": "500+",
+  "slogan": "Empowering vision. Delivering value."
+}
+</script>
+
+<!-- Additional Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Dairo Tech",
+  "url": "https://dairotech.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://dairotech.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>

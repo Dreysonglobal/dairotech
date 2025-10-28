@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="White paper: Gen AI in QA - A fresh look at modern testing approaches with generative AI transforming quality assurance processes.">
+    <title>Gen AI in QA: Modern Testing Approaches White Paper | Dairo Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">Dairo Tech</a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="what-we-do.html">What we do</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="success-stories.html">Success stories</a></li>
+                        
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="whitepaper-hero">
+        <div class="container">
+            <div class="whitepaper-header">
+                <div class="whitepaper-meta">
+                    <div class="paper-category">Generative AI</div>
+                    <div class="paper-type">White Paper</div>
+                    <div class="paper-date">18 October 2025</div>
+                    <div class="paper-pages">15 min read • 12 pages</div>
+                </div>
+                <h1>Gen AI in QA: A Fresh Look at Modern Testing Approaches</h1>
+                <p class="paper-subtitle">How generative AI is revolutionizing quality assurance with automated test generation, intelligent bug detection, and predictive quality analysis</p>
+                
+                <div class="paper-author">
+                    <div class="author-avatar">MC</div>
+                    <div class="author-info">
+                        <div class="author-name">Michael Chen</div>
+                        <div class="author-role">CTO & AI Practice Lead</div>
+                        <div class="author-bio">Leading AI innovation at Dairo Tech with 15+ years in software engineering and quality assurance</div>
+                    </div>
+                </div>
+
+                <div class="whitepaper-actions">
+                    <a href="#" class="btn btn-primary">Download Full PDF</a>
+                    <a href="#summary" class="btn btn-outline">Read Executive Summary</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whitepaper-content">
+        <div class="container">
+            <div class="whitepaper-grid">
+                <div class="whitepaper-main">
+                    <article class="whitepaper-article">
+                        <div class="executive-summary" id="summary">
+                            <h2>Executive Summary</h2>
+                            <p>Generative AI is transforming quality assurance from a manual, time-consuming process into an intelligent, automated, and predictive discipline. This white paper explores how organizations can leverage Gen AI to enhance testing efficiency, improve test coverage, and accelerate software delivery while maintaining high-quality standards.</p>
+                            
+                            <div class="key-findings">
+                                <h3>Key Findings</h3>
+                                <div class="findings-grid">
+                                    <div class="finding">
+                                        <div class="finding-icon">🚀</div>
+                                        <div class="finding-content">
+                                            <h4>70% Faster Test Creation</h4>
+                                            <p>AI-generated tests reduce manual effort and accelerate test development cycles</p>
+                                        </div>
+                                    </div>
+                                    <div class="finding">
+                                        <div class="finding-icon">🎯</div>
+                                        <div class="finding-content">
+                                            <h4>45% Higher Test Coverage</h4>
+                                            <p>Intelligent test generation identifies edge cases and complex scenarios</p>
+                                        </div>
+                                    </div>
+                                    <div class="finding">
+                                        <div class="finding-icon">💰</div>
+                                        <div class="finding-content">
+                                            <h4>60% Cost Reduction</h4>
+                                            <p>Automated QA processes significantly reduce manual testing costs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="toc">
+                            <h3>Table of Contents</h3>
+                            <ol>
+                                <li><a href="#introduction">The Evolution of QA in the AI Era</a></li>
+                                <li><a href="#test-generation">AI-Powered Test Generation</a></li>
+                                <li><a href="#bug-detection">Intelligent Bug Detection</a></li>
+                                <li><a href="#test-optimization">Test Suite Optimization</a></li>
+                                <li><a href="#implementation">Implementation Framework</a></li>
+                                <li><a href="#case-studies">Real-World Case Studies</a></li>
+                                <li><a href="#future-trends">Future Trends & Recommendations</a></li>
+                            </ol>
+                        </div>
+
+                        <div class="chapter" id="introduction">
+                            <h2>1. The Evolution of QA in the AI Era</h2>
+                            <p>Quality assurance has undergone significant transformation over the past decade, evolving from manual testing to automated scripts, and now to intelligent, AI-driven approaches. Generative AI represents the next frontier in this evolution, enabling unprecedented levels of automation and intelligence in software testing.</p>
+
+                            <div class="evolution-timeline">
+                                <div class="timeline-phase">
+                                    <div class="phase-year">2010-2015</div>
+                                    <h4>Manual Testing Era</h4>
+                                    <p>Scripted manual testing, limited automation, high human dependency</p>
+                                </div>
+                                <div class="timeline-phase">
+                                    <div class="phase-year">2015-2020</div>
+                                    <h4>Automation Revolution</h4>
+                                    <p>Selenium, Appium, and test automation frameworks</p>
+                                </div>
+                                <div class="timeline-phase">
+                                    <div class="phase-year">2020-2025</div>
+                                    <h4>AI-Assisted Testing</h4>
+                                    <p>Machine learning for test optimization and predictive analytics</p>
+                                </div>
+                                <div class="timeline-phase current">
+                                    <div class="phase-year">2025+</div>
+                                    <h4>Generative AI Era</h4>
+                                    <p>AI-generated tests, intelligent bug prediction, autonomous QA</p>
+                                </div>
+                            </div>
+
+                            <h3>The Current State of QA Challenges</h3>
+                            <ul>
+                                <li><strong>Test Maintenance Overhead:</strong> 40-60% of automation effort spent on test maintenance</li>
+                                <li><strong>Limited Test Coverage:</strong> Traditional methods miss complex edge cases and integration scenarios</li>
+                                <li><strong>Slow Feedback Cycles:</strong> Lengthy testing cycles delay releases and innovation</li>
+                                <li><strong>Skill Gaps:</strong> Shortage of skilled automation engineers and QA specialists</li>
+                            </ul>
+                        </div>
+
+                        <div class="chapter" id="test-generation">
+                            <h2>2. AI-Powered Test Generation</h2>
+                            <p>Generative AI enables the automatic creation of comprehensive test cases, test data, and test scripts based on requirements, user stories, and existing codebases.</p>
+
+                            <h3>Test Case Generation</h3>
+                            <p>AI models can analyze requirements documentation and generate detailed test cases covering positive, negative, and edge case scenarios.</p>
+
+                            <div class="code-example">
+                                <h4>Example: AI-Generated Test Case</h4>
+                                <pre><code>Feature: User Login
+Scenario: Successful login with valid credentials
+Given the user is on login page
+When they enter valid username and password
+Then they should be redirected to dashboard
+And welcome message should be displayed
+
+Scenario: Failed login with invalid credentials
+Given the user is on login page
+When they enter invalid username or password
+Then error message should be displayed
+And login should fail</code></pre>
+                            </div>
+
+                            <h3>Test Data Generation</h3>
+                            <p>Generative AI can create realistic, diverse test data that covers various scenarios while maintaining data privacy and compliance.</p>
+
+                            <div class="stat-box">
+                                <div class="stat-number">85%</div>
+                                <div class="stat-label">Reduction in test data preparation time</div>
+                            </div>
+
+                            <h3>Automated Test Script Generation</h3>
+                            <p>AI models convert natural language test cases into executable automation scripts across multiple frameworks and platforms.</p>
+
+                            <div class="framework-support">
+                                <h4>Supported Test Frameworks</h4>
+                                <div class="framework-tags">
+                                    <span class="framework-tag">Selenium</span>
+                                    <span class="framework-tag">Cypress</span>
+                                    <span class="framework-tag">Playwright</span>
+                                    <span class="framework-tag">Appium</span>
+                                    <span class="framework-tag">JUnit</span>
+                                    <span class="framework-tag">TestNG</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chapter" id="bug-detection">
+                            <h2>3. Intelligent Bug Detection</h2>
+                            <p>Generative AI enhances bug detection through pattern recognition, anomaly detection, and predictive analysis of potential failure points.</p>
+
+                            <h3>Code Analysis & Defect Prediction</h3>
+                            <p>AI models analyze code changes, commit history, and development patterns to predict potential defects before they reach testing.</p>
+
+                            <div class="prediction-metrics">
+                                <div class="metric-card">
+                                    <div class="metric-value">92%</div>
+                                    <div class="metric-label">Accuracy in defect prediction</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-value">3x</div>
+                                    <div class="metric-label">Earlier bug detection</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-value">65%</div>
+                                    <div class="metric-label">Reduction in escaped defects</div>
+                                </div>
+                            </div>
+
+                            <h3>Visual Testing & UI Validation</h3>
+                            <p>Computer vision and AI compare UI screenshots to detect visual regressions, layout issues, and responsive design problems.</p>
+
+                            <div class="case-example">
+                                <h4>Case: E-commerce Platform</h4>
+                                <p>An online retailer used AI visual testing to detect UI inconsistencies across 15,000 product pages, identifying 234 visual defects that traditional testing missed.</p>
+                            </div>
+
+                            <h3>Performance Testing Intelligence</h3>
+                            <p>AI analyzes performance metrics to identify bottlenecks, predict scaling issues, and recommend optimization strategies.</p>
+                        </div>
+
+                        <div class="chapter" id="test-optimization">
+                            <h2>4. Test Suite Optimization</h2>
+                            <p>Generative AI helps optimize test suites by identifying redundant tests, prioritizing critical test cases, and generating minimal viable test sets.</p>
+
+                            <h3>Test Impact Analysis</h3>
+                            <p>AI models analyze code changes to determine which tests are most relevant and should be prioritized in CI/CD pipelines.</p>
+
+                            <div class="optimization-results">
+                                <div class="result-card">
+                                    <div class="result-value">70%</div>
+                                    <div class="result-label">Faster test execution</div>
+                                </div>
+                                <div class="result-card">
+                                    <div class="result-value">50%</div>
+                                    <div class="result-label">Reduced test suite size</div>
+                                </div>
+                                <div class="result-card">
+                                    <div class="result-value">95%</div>
+                                    <div class="result-label">Critical path coverage</div>
+                                </div>
+                            </div>
+
+                            <h3>Flaky Test Detection</h3>
+                            <p>AI identifies and helps resolve flaky tests by analyzing test execution patterns and environmental factors.</p>
+
+                            <div class="expert-insight">
+                                <h4>Expert Insight</h4>
+                                <p>"Flaky tests cost organizations millions in wasted compute resources and delayed releases. AI-driven detection can identify patterns human reviewers often miss."</p>
+                                <cite>— Michael Chen, CTO</cite>
+                            </div>
+                        </div>
+
+                        <div class="chapter" id="implementation">
+                            <h2>5. Implementation Framework</h2>
+                            <p>Successfully integrating Gen AI into QA processes requires a structured approach and careful planning.</p>
+
+                            <h3>Implementation Roadmap</h3>
+                            <div class="implementation-steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Assessment & Readiness</h4>
+                                        <p>Evaluate current QA maturity, identify use cases, and establish success metrics</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Tool Selection & Integration</h4>
+                                        <p>Choose AI testing tools that integrate with existing CI/CD and test management systems</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Pilot Implementation</h4>
+                                        <p>Start with focused pilot projects to demonstrate value and refine processes</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Scaling & Optimization</h4>
+                                        <p>Expand AI testing across the organization and continuously optimize processes</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>Key Success Factors</h3>
+                            <ul>
+                                <li><strong>Executive Sponsorship:</strong> Leadership support for AI transformation</li>
+                                <li><strong>Skills Development:</strong> Training QA teams in AI tools and methodologies</li>
+                                <li><strong>Data Quality:</strong> Clean, well-structured test data and documentation</li>
+                                <li><strong>Change Management:</strong> Managing cultural shift from manual to AI-driven testing</li>
+                            </ul>
+                        </div>
+
+                        <div class="chapter" id="case-studies">
+                            <h2>6. Real-World Case Studies</h2>
+
+                            <div class="case-study">
+                                <h3>Financial Services: Test Automation at Scale</h3>
+                                <div class="case-details">
+                                    <div class="case-metrics">
+                                        <div class="case-metric">
+                                            <strong>Industry:</strong> Banking & Finance
+                                        </div>
+                                        <div class="case-metric">
+                                            <strong>Challenge:</strong> 2-week regression testing cycles
+                                        </div>
+                                        <div class="case-metric">
+                                            <strong>Solution:</strong> AI-powered test generation and optimization
+                                        </div>
+                                    </div>
+                                    <div class="case-results">
+                                        <div class="result">
+                                            <div class="result-value">85%</div>
+                                            <div class="result-label">Faster regression testing</div>
+                                        </div>
+                                        <div class="result">
+                                            <div class="result-value">$2.1M</div>
+                                            <div class="result-label">Annual cost savings</div>
+                                        </div>
+                                        <div class="result">
+                                            <div class="result-value">99.2%</div>
+                                            <div class="result-label">Test accuracy</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="case-study">
+                                <h3>E-commerce: Visual Regression Testing</h3>
+                                <div class="case-details">
+                                    <div class="case-metrics">
+                                        <div class="case-metric">
+                                            <strong>Industry:</strong> Retail & E-commerce
+                                        </div>
+                                        <div class="case-metric">
+                                            <strong>Challenge:</strong> UI inconsistencies across platforms
+                                        </div>
+                                        <div class="case-metric">
+                                            <strong>Solution:</strong> AI visual testing with computer vision
+                                        </div>
+                                    </div>
+                                    <div class="case-results">
+                                        <div class="result">
+                                            <div class="result-value">95%</div>
+                                            <div class="result-label">Fewer visual defects</div>
+                                        </div>
+                                        <div class="result">
+                                            <div class="result-value">40%</div>
+                                            <div class="result-label">Faster releases</div>
+                                        </div>
+                                        <div class="result">
+                                            <div class="result-value">$500K</div>
+                                            <div class="result-label">Saved in manual testing</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chapter" id="future-trends">
+                            <h2>7. Future Trends & Recommendations</h2>
+
+                            <h3>Emerging Trends</h3>
+                            <div class="trends-grid">
+                                <div class="trend-card">
+                                    <h4>Autonomous QA Systems</h4>
+                                    <p>Self-healing tests and fully automated quality gates</p>
+                                </div>
+                                <div class="trend-card">
+                                    <h4>Predictive Quality Analytics</h4>
+                                    <p>AI predicting software quality before development completion</p>
+                                </div>
+                                <div class="trend-card">
+                                    <h4>Natural Language Testing</h4>
+                                    <p>Conversational AI for test creation and execution</p>
+                                </div>
+                            </div>
+
+                            <h3>Strategic Recommendations</h3>
+                            <ol>
+                                <li><strong>Start with Specific Use Cases:</strong> Focus on high-impact areas like regression testing or test data generation</li>
+                                <li><strong>Invest in Skills Development:</strong> Train QA teams in AI tools and data science fundamentals</li>
+                                <li><strong>Establish Governance:</strong> Create guidelines for AI-generated test validation and quality assurance</li>
+                                <li><strong>Measure ROI:</strong> Track metrics like test creation time, defect detection rates, and release velocity</li>
+                                <li><strong>Foster Collaboration:</strong> Encourage collaboration between QA, development, and data science teams</li>
+                            </ol>
+
+                            <div class="conclusion">
+                                <h3>Conclusion</h3>
+                                <p>Generative AI represents a paradigm shift in quality assurance, offering unprecedented opportunities for automation, intelligence, and efficiency. Organizations that embrace these technologies early will gain significant competitive advantages through faster releases, higher quality software, and reduced testing costs.</p>
+                                <p>The journey to AI-driven QA requires careful planning, but the rewards—measured in improved quality, accelerated delivery, and cost savings—make it an essential investment for any organization serious about software excellence in the digital age.</p>
+                            </div>
+                        </div>
+
+                        <div class="whitepaper-actions-bottom">
+                            <div class="actions-grid">
+                                <div class="action-card">
+                                    <h4>Download Full White Paper</h4>
+                                    <p>Get the complete 12-page PDF with detailed case studies, implementation guides, and technical specifications.</p>
+                                    <a href="#" class="btn btn-primary">Download PDF</a>
+                                </div>
+                                <div class="action-card">
+                                    <h4>Request Expert Consultation</h4>
+                                    <p>Schedule a session with our AI and QA experts to discuss your specific needs.</p>
+                                    <a href="contact.html" class="btn btn-outline">Book Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="whitepaper-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Download Resources</h3>
+                        <ul class="resource-links">
+                            <li><a href="#">Full White Paper (PDF)</a></li>
+                            <li><a href="#">Executive Summary</a></li>
+                            <li><a href="#">Implementation Checklist</a></li>
+                            <li><a href="#">ROI Calculator</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Related Research</h3>
+                        <ul class="research-links">
+                            <li><a href="genai-enterprise-rag.html">GenAI: Enterprise-Grade RAG</a></li>
+                            <li><a href="research-enterprise-ai-challenges.html">Enterprise AI Implementation</a></li>
+                            <li><a href="white-paper-computer-vision-retail.html">Computer Vision in Retail</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>AI & QA Services</h3>
+                        <p>Explore our AI-powered quality assurance services:</p>
+                        <ul class="service-links">
+                            <li><a href="ai-consulting.html">AI Consulting</a></li>
+                            <li><a href="software-engineering.html">Software Engineering</a></li>
+                            <li><a href="quality-assurance.html">Quality Assurance</a></li>
+                            <li><a href="data-analytics.html">Data & Analytics</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Stay Updated</h3>
+                        <p>Get the latest AI and QA insights delivered to your inbox.</p>
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-outline btn-full">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Dairo Tech Presence</h3>
+                    <ul class="footer-links">
+                        <li><a href="offices.html">Our offices</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="map.html">Dairo Tech Map</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact us</h3>
+                    <p>Drop a message to our team to see how we can help</p>
+                    <a href="contact.html" class="btn btn-outline-light">Let's talk</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Trusted by</h3>
+                    <div class="trusted-logos">
+                        <span>Bosch</span>
+                        <span>Siemens</span>
+                        <span>eBay</span>
+                        <span>Inditex</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Information</h3>
+                    <p>contact@dairotech.com</p>
+                    <p>USA office: 4330 W Broward Boulevard – Space P/Q, Plantation, FL 33317</p>
+                    <p>+1 727 341 5669</p>
+                    <p>UK office: London EC3A 7BA, 6 Bevis Marks</p>
+                    <p>+44 20 3740 7669</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    Copyright © 2002 - 2025 Dairo Tech LLC
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+<div class="floating-buttons">
+    <a href="https://wa.me/2348099440105" class="floating-btn whatsapp-btn" target="_blank">
+        <span class="tooltip">Chat on WhatsApp</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893-.001-3.189-1.262-6.209-3.549-8.485"/>
+        </svg>
+    </a>
+    <a href="tel:2348099440105" class="floating-btn call-btn">
+        <span class="tooltip">Call Us Now</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"/>
+            <path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 00-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 00.043-1.391L6.859 3.513a1 1 0 00-1.391-.087l-2.17 1.861a1 1 0 00-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 00.648-.291l1.86-2.171a1 1 0 00-.086-1.391l-4.064-3.696z"/>
+        </svg>
+    </a>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
