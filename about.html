@@ -3,14 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Dairo Tech - a global software solutions company with 20+ years of experience delivering technology excellence.">
-    <title>About Us - Dairo Tech Company Overview & Leadership</title>
+    <meta name="description" content="About Dairo Tech - Digital and Commercial Analytics practice transforming data into measurable business outcomes">
+    <meta name="keywords" content="about Dairo Tech, mission, core competencies, CVM, analytics, AI">
+    <title>About Us - Dairo Tech</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to about page */
+        .about-hero {
+            background: linear-gradient(135deg, #1a0933 0%, #4a1e71 100%);
+            color: white;
+            padding: 140px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.05)" points="0,1000 1000,0 1000,1000"/></svg>');
+        }
+        
+        .about-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .about-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            -webkit-text-fill-color: white;
+            background: none;
+            line-height: 1.1;
+        }
+        
+        .mission-section {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .mission-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .mission-statement {
+            background: var(--gradient-1);
+            color: white;
+            border-radius: var(--border-radius-lg);
+            padding: 4rem 3rem;
+            margin: 3rem 0;
+            box-shadow: var(--shadow);
+        }
+        
+        .mission-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .mission-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .who-we-are {
+            background: var(--bg-light);
+            padding: 5rem 0;
+        }
+        
+        .who-we-are-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        @media (max-width: 968px) {
+            .who-we-are-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        .expertise-card {
+            background: var(--bg-card);
+            border-radius: var(--border-radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .expertise-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .expertise-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .competencies-section {
+            padding: 5rem 0;
+        }
+        
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+        
+        .competency-card {
+            background: var(--bg-card);
+            border-radius: var(--border-radius-lg);
+            padding: 3rem 2.5rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .competency-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+        }
+        
+        .competency-1::before { background: var(--gradient-1); }
+        .competency-2::before { background: var(--gradient-2); }
+        .competency-3::before { background: var(--gradient-3); }
+        .competency-4::before { background: var(--gradient-4); }
+        .competency-5::before { background: var(--gradient-1); }
+        .competency-6::before { background: var(--gradient-2); }
+        .competency-7::before { background: var(--gradient-3); }
+        .competency-8::before { background: var(--gradient-4); }
+        
+        .competency-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .competency-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .competency-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .capabilities-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+        
+        .capabilities-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .capabilities-list li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .evolution-section {
+            background: linear-gradient(135deg, #110f11 0%, #864ba2 100%);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .evolution-section h2 {
+            color: white;
+            -webkit-text-fill-color: white;
+            background: none;
+        }
+        
+        .evolution-timeline {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .timeline-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            min-width: 200px;
+        }
+        
+        .timeline-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .timeline-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .industries-section {
+            padding: 5rem 0;
+        }
+        
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .industry-card {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-light);
+            transition: var(--transition);
+        }
+        
+        .industry-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        
+        .industry-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .industry-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .mission-title {
+                font-size: 2rem;
+            }
+            
+            .competencies-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .evolution-timeline {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="nav-container">
@@ -21,9 +304,9 @@
                     <ul class="nav-list">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="what-we-do.html">What we do</a></li>
-                        <li><a href="industries.html">Industries</a></li>
+                        
                         <li><a href="about.html" class="active">About us</a></li>
-                        <li><a href="success-stories.html">Success stories</a></li>
+                        
                         <li><a href="contact.html">Contact us</a></li>
                     </ul>
                 </nav>
@@ -36,183 +319,239 @@
         </div>
     </header>
 
-    <section class="page-hero">
-        <div class="container">
-            <h1>Our mission is simple</h1>
-            <p>Turn data into growth. Turn intelligence into impact.</p>
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>About Dairo Tech</h1>
+            <p class="what-we-do-subtitle">Transforming data into growth and intelligence into impact through digital and commercial analytics excellence.</p>
         </div>
     </section>
 
-    <section class="about-intro">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Who we are</h2>
-                    <p>We are a Digital and Commercial Analytics practice dedicated to helping
-                        organizations turn their data assets into measurable commercial outcomes.
-                        Our team blends data science, marketing strategy, and technology innovation to
-                        enable smarter decisions, sharper customer engagement, and sustainable business
-                        growth.<br>
-                        Whether you are a telecom operator, financial service provider, iGaming or digital
-                        enterprise, we deliver end-to-end value - from strategy to execution.<br>
-                        Our approach combines strategic vision, analytical precision, and execution
-                        excellence - ensuring every initiative translates from boardroom strategy to market
-                        success.</p>
-                    
-                    <p>Over the years, we've evolved alongside the technology landscape, continuously expanding our expertise to include emerging technologies like AI, cloud computing, and IoT. Our commitment remains unchanged: to deliver exceptional value through technical excellence, deep industry knowledge, and unwavering dedication to our clients' success.</p>
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="mission-container">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="mission-statement">
+                <div class="mission-title">Turn data into growth. Turn intelligence into impact.</div>
+                <p class="mission-subtitle">We transform complex data into clear business outcomes, delivering measurable value through advanced analytics and strategic execution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="who-we-are">
+        <div class="mission-container">
+            <h2 class="section-title">Who We Are</h2>
+            <div class="who-we-are-content">
+                <div>
+                    <p>We are a Digital and Commercial Analytics practice dedicated to helping organizations turn their data assets into measurable commercial outcomes. Our team blends data science, marketing strategy, and technology innovation to enable smarter decisions, sharper customer engagement, and sustainable business growth.</p>
+                    <p>Whether you are a telecom operator, financial service provider, iGaming or digital enterprise, we deliver end-to-end value - from strategy to execution.</p>
+                    <p>Our approach combines strategic vision, analytical precision, and execution excellence - ensuring every initiative translates from boardroom strategy to market success.</p>
+                </div>
+                <div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">🚀</div>
+                        <h3 class="expertise-title">Our Evolution</h3>
+                        <p>Over the years, we've evolved alongside the technology landscape, continuously expanding our expertise to include emerging technologies like AI, cloud computing, and IoT. Our commitment remains unchanged: to deliver exceptional value through technical excellence, deep industry knowledge, and unwavering dedication to our clients' success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="industries-section">
+        <div class="mission-container">
+            <h2 class="section-title">Industries We Serve</h2>
+            <p class="text-center">We deliver end-to-end value across diverse sectors, from strategy to execution</p>
+            
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-icon">📡</div>
+                    <div class="industry-name">Telecom Operators</div>
+                    <p>CVM, churn prediction, and customer lifecycle optimization</p>
                 </div>
                 
+                <div class="industry-card">
+                    <div class="industry-icon">🏦</div>
+                    <div class="industry-name">Financial Services</div>
+                    <p>Risk modeling, customer segmentation, and digital transformation</p>
+                </div>
+                
+                <div class="industry-card">
+                    <div class="industry-icon">🎮</div>
+                    <div class="industry-name">iGaming & Digital</div>
+                    <p>Player behavior analytics, personalization, and engagement optimization</p>
+                </div>
+                
+                <div class="industry-card">
+                    <div class="industry-icon">🏨</div>
+                    <div class="industry-name">Hospitality</div>
+                    <p>Guest experience optimization and loyalty program enhancement</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="values-section">
-        <div class="container">
-            <h2 class="section-title">Our Core Competencies - Offerings</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    
-                    <h3>Customer Value Management Strategy &amp; Execution</h3>
-                    <p>We architect and execute end-to-end CVM frameworks that drive measurable value
-                        across acquisition, growth, retention, and win-back.
-                        From segmentation design to offer execution, we align commercial strategy,
-                        analytics, and technology to create customer-centric engagement engines that
-                        boost profitability and lifetime value.</p>
-                        <h3>Our Key Capabilities:</h3>
-                            <li>CVM strategy design &amp; governance</li>
-                            <li>Offer &amp; campaign management automation</li>
-                            <li>Personalized lifecycle journeys</li>
-                            <li>Cross-sell, up-sell, and retention optimization</li>
-                        
-                </div><br><br>
-                <div class="value-card">
-                    
-                    <h3>Data Assets Monetisation &amp; Commercialisation</h3>
-                    <p>We help organizations unlock new revenue streams from their data assets
-                        through secure, compliant, and scalable monetisation frameworks.
-                        Our approach blends data governance, productisation, and go-to-market
-                        enablement to turn raw data into valuable products and partnerships.</p>
-                        <h3>Our Key Capabilities:</h3>
-                            <li>Data marketplace &amp; API economy enablement</li>
-                            <li>Productisation of anonymized &amp; enriched datasets</li>
-                            <li>Partner activation &amp; deal structure design</li>
-                            <li>Privacy &amp; regulatory compliance frameworks</li>
-                </div><br><br>
-
-                <div class="value-card">
-                    
-                    <h3>Advanced Analytics &amp; Predictive Modeling</h3>
-                    <p>We build analytical engines that power intelligent decision-making.
-                        From customer behaviour prediction to network demand forecasting, our models are
-                        designed to drive proactive action and measurable ROI.</p>
-
-                        <h3>Our Key Capabilities:</h3>
-                            <li>Predictive &amp; prescriptive Modeling</li>
-                            <li>Propensity &amp; churn prediction</li>
-                            <li>Next-best-offer analytics</li>
-                            <li>Customer scoring &amp; risk models</li>
-                </div><br><br>
-
-                <div class="value-card">
-                    
-                    <h3>AI/ML-driven Personalization</h3>
-                    <p>We leverage artificial intelligence and machine learning to deliver hyper-
-                        personalized experiences that improve engagement and conversion.
-                        Our AI frameworks continuously learn and adapt, ensuring your customers receive
-                        the right message, on the right channel, at the right moment.</p>
-                        <h3>Our Key Capabilities:</h3>
+    <!-- Core Competencies -->
+    <section class="competencies-section">
+        <div class="mission-container">
+            <h2 class="section-title">Our Core Competencies</h2>
+            <p class="text-center">Comprehensive analytics and technology solutions that drive measurable business outcomes</p>
+            
+            <div class="competencies-grid">
+                <!-- CVM Strategy -->
+                <div class="competency-card competency-1">
+                    <div class="competency-icon">🎯</div>
+                    <h3 class="competency-title">Customer Value Management Strategy & Execution</h3>
+                    <p>We architect and execute end-to-end CVM frameworks that drive measurable value across acquisition, growth, retention, and win-back.</p>
+                    <ul class="capabilities-list">
+                        <li>CVM strategy design & governance</li>
+                        <li>Offer & campaign management automation</li>
+                        <li>Personalized lifecycle journeys</li>
+                        <li>Cross-sell, up-sell, and retention optimization</li>
+                    </ul>
+                </div>
+                
+                <!-- Data Monetization -->
+                <div class="competency-card competency-2">
+                    <div class="competency-icon">💰</div>
+                    <h3 class="competency-title">Data Assets Monetisation & Commercialisation</h3>
+                    <p>We help organizations unlock new revenue streams from their data assets through secure, compliant, and scalable monetisation frameworks.</p>
+                    <ul class="capabilities-list">
+                        <li>Data marketplace & API economy enablement</li>
+                        <li>Productisation of anonymized & enriched datasets</li>
+                        <li>Partner activation & deal structure design</li>
+                        <li>Privacy & regulatory compliance frameworks</li>
+                    </ul>
+                </div>
+                
+                <!-- Advanced Analytics -->
+                <div class="competency-card competency-3">
+                    <div class="competency-icon">📊</div>
+                    <h3 class="competency-title">Advanced Analytics & Predictive Modeling</h3>
+                    <p>We build analytical engines that power intelligent decision-making with models designed to drive proactive action and measurable ROI.</p>
+                    <ul class="capabilities-list">
+                        <li>Predictive & prescriptive Modeling</li>
+                        <li>Propensity & churn prediction</li>
+                        <li>Next-best-offer analytics</li>
+                        <li>Customer scoring & risk models</li>
+                    </ul>
+                </div>
+                
+                <!-- AI/ML Personalization -->
+                <div class="competency-card competency-4">
+                    <div class="competency-icon">🤖</div>
+                    <h3 class="competency-title">AI/ML-driven Personalization</h3>
+                    <p>We leverage artificial intelligence and machine learning to deliver hyper-personalized experiences that improve engagement and conversion.</p>
+                    <ul class="capabilities-list">
                         <li>Real-time personalization engines</li>
                         <li>Recommender systems</li>
-                        <li>behavioural Modeling</li>
+                        <li>Behavioral Modeling</li>
                         <li>Dynamic pricing and content personalization</li>
-            </div><br><br>
-
-            <div class="value-card">
-                    
-                <h3>Customer Segmentation &amp; Targeting</h3>
-                <p>We design data-driven customer segmentation models that enable precision
-                    targeting and differentiated value propositions.
-                    By combining demographic, behavioural, and value-based insights, we help brands
-                    connect meaningfully with every customer segment.</p>
-                    <h3>Our Key Capabilities:</h3>
-                    <li>Multi-dimensional segmentation frameworks</li>
-                    <li>Value tiering and micro-segmentation</li>
-                    <li>Cluster analysis and persona development</li>
-                    <li>Targeted offer orchestration</li>
-        </div><br><br>
-
-
-        <div class="value-card">
-                    
-            <h3>Lifecycle Management (Acquisition, Growth, Retention, Win-back)</h3>
-            <p>We transform the customer lifecycle into a continuous value journey.
-                Using analytics, CVM automation, and AI insights, we identify the right levers to
-                acquire smarter, grow faster, and retain longer.</p>
-                <h3>Our Key Capabilities:</h3>
-                <li>Lifecycle journey design &amp; orchestration</li>
-                <li>Predictive churn modeling</li>
-                <li>Growth and retention playbooks</li>
-                <li>Loyalty and engagement programs</li>
-    </div><br><br>
-
-
-
-    <div class="value-card">
-                    
-        <h3>Churn Reduction &amp; Loyalty Programs</h3>
-        <p>We help businesses predict and prevent churn while building stronger emotional
-            and transactional loyalty.
-            Our data-led loyalty strategies combine predictive insights, behavioral triggers,
-            and reward design to sustain long-term customer relationships.</p>
-            <h3>Our Key Capabilities:</h3>
-            <li>Churn prevention &amp; retention modeling</li>
-            <li>Loyalty strategy design</li>
-            <li>Rewards, gamification &amp; engagement engines</li>
-            <li>CLV optimization</li>
-</div><br><br>
-
-
-
-<div class="value-card">
-                    
-    <h3>Offer &amp; Campaign Management</h3>
-    <p>We deploy intelligent offer and campaign management systems that automate
-        customer engagement at scale.        
-        Using advanced segmentation and analytics, we enable businesses to deliver
-        personalized, multi-channel campaigns that convert insight into revenue.</p>
-        <h3>Our Key Capabilities:</h3>
-        <li>Campaign design &amp; journey orchestration</li>
-        <li>Offer recommendation engines</li>
-        <li>Channel attribution &amp; optimization</li>
-        <li>Performance analytics &amp; ROI measurement</li>
-</div><br><br>
-
-
-<div class="value-card">
-                    
-    <h3>Digital Channel Optimisation</h3>
-    <p>We optimize the digital customer journey across self-service, app, web, and social
-        channels — increasing engagement, satisfaction, and conversion.
-        Our approach uses data analytics, UX intelligence, and conversion modeling to
-        drive seamless, efficient, and personalized digital experiences.</p>
-        <h3>Our Key Capabilities:</h3>
-        <li>Digital funnel analytics &amp; conversion optimization</li>
-        <li>Self-service adoption strategies</li>
-        <li>Omni-channel integration &amp; personalization</li>
-        <li>Customer journey analytics &amp; UX intelligence</li>
-</div><br><br>
+                    </ul>
+                </div>
                 
+                <!-- Customer Segmentation -->
+                <div class="competency-card competency-5">
+                    <div class="competency-icon">🎪</div>
+                    <h3 class="competency-title">Customer Segmentation & Targeting</h3>
+                    <p>We design data-driven customer segmentation models that enable precision targeting and differentiated value propositions.</p>
+                    <ul class="capabilities-list">
+                        <li>Multi-dimensional segmentation frameworks</li>
+                        <li>Value tiering and micro-segmentation</li>
+                        <li>Cluster analysis and persona development</li>
+                        <li>Targeted offer orchestration</li>
+                    </ul>
+                </div>
+                
+                <!-- Lifecycle Management -->
+                <div class="competency-card competency-6">
+                    <div class="competency-icon">🔄</div>
+                    <h3 class="competency-title">Lifecycle Management</h3>
+                    <p>We transform the customer lifecycle into a continuous value journey using analytics, CVM automation, and AI insights.</p>
+                    <ul class="capabilities-list">
+                        <li>Lifecycle journey design & orchestration</li>
+                        <li>Predictive churn modeling</li>
+                        <li>Growth and retention playbooks</li>
+                        <li>Loyalty and engagement programs</li>
+                    </ul>
+                </div>
+                
+                <!-- Churn Reduction -->
+                <div class="competency-card competency-7">
+                    <div class="competency-icon">📉</div>
+                    <h3 class="competency-title">Churn Reduction & Loyalty Programs</h3>
+                    <p>We help businesses predict and prevent churn while building stronger emotional and transactional loyalty.</p>
+                    <ul class="capabilities-list">
+                        <li>Churn prevention & retention modeling</li>
+                        <li>Loyalty strategy design</li>
+                        <li>Rewards, gamification & engagement engines</li>
+                        <li>CLV optimization</li>
+                    </ul>
+                </div>
+                
+                <!-- Digital Channel Optimization -->
+                <div class="competency-card competency-8">
+                    <div class="competency-icon">📱</div>
+                    <h3 class="competency-title">Digital Channel Optimisation</h3>
+                    <p>We optimize the digital customer journey across self-service, app, web, and social channels to increase engagement and conversion.</p>
+                    <ul class="capabilities-list">
+                        <li>Digital funnel analytics & conversion optimization</li>
+                        <li>Self-service adoption strategies</li>
+                        <li>Omni-channel integration & personalization</li>
+                        <li>Customer journey analytics & UX intelligence</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    
-    
+    <!-- Evolution Section -->
+    <section class="evolution-section">
+        <div class="mission-container">
+            <h2 class="section-title">Our Evolution & Commitment</h2>
+            
+            <div class="evolution-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">🚀</div>
+                    <div class="timeline-text">Continuous Innovation</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">🌍</div>
+                    <div class="timeline-text">Global Expertise</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">💡</div>
+                    <div class="timeline-text">Emerging Technologies</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">⭐</div>
+                    <div class="timeline-text">Client Success Focus</div>
+                </div>
+            </div>
+            
+            <p style="max-width: 600px; margin: 2rem auto 0; opacity: 0.9;">
+                Our journey has been marked by continuous adaptation to technological advancements while maintaining our core commitment to delivering exceptional value through technical excellence, deep industry knowledge, and unwavering dedication to our clients' success.
+            </p>
+        </div>
+    </section>
 
-    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to transform your data into growth?</h2>
+                <p class="cta-description">Let's discuss how Dairo Tech can help you leverage advanced analytics and AI to drive measurable business outcomes.</p>
+                <a href="contact.html" class="btn btn-primary">Get in touch</a>
+            </div>
+        </div>
+    </section>
 
-    
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -251,27 +590,26 @@
                 <div class="footer-copyright">
                     Copyright © 2002 - 2025 Dairo Tech LLC
                 </div>
-                
             </div>
         </div>
     </footer>
 
     <!-- Floating Action Buttons -->
-<div class="floating-buttons">
-    <a href="https://wa.me/2348099440105" class="floating-btn whatsapp-btn" target="_blank">
-        <span class="tooltip">Chat on WhatsApp</span>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893-.001-3.189-1.262-6.209-3.549-8.485"/>
-        </svg>
-    </a>
-    <a href="tel:2348099440105" class="floating-btn call-btn">
-        <span class="tooltip">Call Us Now</span>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"/>
-            <path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 00-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 00.043-1.391L6.859 3.513a1 1 0 00-1.391-.087l-2.17 1.861a1 1 0 00-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 00.648-.291l1.86-2.171a1 1 0 00-.086-1.391l-4.064-3.696z"/>
-        </svg>
-    </a>
-</div>
+    <div class="floating-buttons">
+        <a href="https://wa.me/2348099440105" class="floating-btn whatsapp-btn" target="_blank">
+            <span class="tooltip">Chat on WhatsApp</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893-.001-3.189-1.262-6.209-3.549-8.485"/>
+            </svg>
+        </a>
+        <a href="tel:2348099440105" class="floating-btn call-btn">
+            <span class="tooltip">Call Us Now</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"/>
+                <path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 00-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 00.043-1.391L6.859 3.513a1 1 0 00-1.391-.087l-2.17 1.861a1 1 0 00-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 00.648-.291l1.86-2.171a1 1 0 00-.086-1.391l-4.064-3.696z"/>
+            </svg>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>
